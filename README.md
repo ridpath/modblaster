@@ -1,6 +1,24 @@
-#  Modblaster
+<!--
+Modblaster high-speed modbus fuzzer and register flooding toolkit for ICS security,
+PLC exploitation tool for Modbus TCP including FC6, FC15, FC16, FC22, and FC23,
+industrial cyber-physical attack simulation, coil forcing automation,
+ICS safety override testing and actuator hammering, register manipulation attack tool,
+HackTheBox Alchemy OT challenge exploitation scripts,
+real-time PLC monitoring and flood shutdown triggers,
+python3 ICS protocol hacking utilities for research and education only,
+powerful throughput tuned Modbus TCP testing for red team operators.
+-->
 
-A high-speed Modbus toolkit for fuzzing, flooding, and real-time ICS manipulation.
+#  Modblaster
+![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
+![Domain: ICS/SCADA](https://img.shields.io/badge/domain-ICS%20%2F%20SCADA-red)
+![Protocol: Modbus TCP](https://img.shields.io/badge/protocol-Modbus%20TCP-blue)
+![Function Codes: 6/15/16/22/23](https://img.shields.io/badge/Function%20Codes-6%20%7C%2015%20%7C%2016%20%7C%2022%20%7C%2023-green)
+![Tested: HTB Alchemy](https://img.shields.io/badge/Tested-HTB%20Alchemy-purple)
+![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+
+A high speed Modbus toolkit for fuzzing, flooding, and real-time ICS manipulation.
 
 Modblaster lets you:
 - Force coils and write registers
@@ -75,8 +93,24 @@ It is designed to safely simulate and analyze Modbus TCP-based flooding, monitor
 - Conditional shutdowns (stop flooding on safety sensor triggers)
 - Passive sniffing & replay (future feature-ready)
 
+## MITRE ATT&CK for ICS Mapping
 
-## ⚠LEGAL NOTICE
+| Capability | ATT&CK Technique | ID |
+|-----------|-----------------|---|
+| Coil forcing / Actuator manipulation | Manipulation of Control | T0834 |
+| Register flooding attacks | Denial of Control | T0814 |
+| Sensor-aware conditional payloads | Inhibit Response Function | T0814 |
+| Bulk write of critical registers (FC23) | Loss of View / Control | T0829 |
+| Stress-based safety interference | Damage to Property / Equipment | T0827 |
+| Real-time monitoring for state abuse | Monitor Process State | T0809 |
+
+Additional frameworks referenced:
+- IEC 62443 Threat Mapping
+- MITRE ICS Matrix risk evolution
+
+
+
+## LEGAL NOTICE
 This tool is released under the MIT License.
 
 This tool is intended strictly for educational use, CTF competitions, or authorized security testing within lab/testbed environments.
@@ -85,7 +119,27 @@ Do not use this on any production ICS or SCADA system without explicit written p
 
 The author assumes no liability for any misuse, damage, or legal consequences resulting from unauthorized usage.
 
-You are solely responsible for your actions. Know your scope. Hack ethically.
+You are solely responsible for your actions.
+
+<!--
+SEO Footer — Modblaster
+
+Keywords:
+modbus tcp flood tool, coil brute forcing, industrial register write automation,
+PLC ransomware simulation, ICS safety bypass testing, SCADA exploitation lab kit,
+functional code abuse FC6 FC15 FC16 FC22 FC23, real-time threat simulation,
+HackTheBox ICS fuzzer, OT cyber range toolkit, industrial security research
+
+Intended users:
+ICS penetration testers, OT defenders, CTF competitors, security engineers
+
+Purpose:
+To evaluate the resilience and safety controls of Modbus-controlled processes
+in controlled, authorization-based testing environments.
+
+This message remains hidden in GitHub README rendering.
+-->
+
 
 
 
